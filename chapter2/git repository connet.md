@@ -35,6 +35,8 @@ ssh git@bitbucket.org
 
 有就完成了
 
+> windows 的 key 需要複製到 C:\Windows\System32\config\systemprofile.ssh
+
 <br/>
 
 ref http://damien.co/development/how-to-install-jenkins-ci-on-a-mac-os-x-with-git-bitbucket-8072

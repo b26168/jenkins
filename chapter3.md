@@ -5,3 +5,4 @@
 
 * ## 新增一個 job
 * ## Build Now
+* ## Build xcode project

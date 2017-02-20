@@ -11,4 +11,5 @@
 * [完成作業建置](chapter3.md)
   * [新增一個 job](chapter3/new-item.md)
   * [Build Now](chapter3/build-now.md)
+  * [Build xcode project](chapter3/build-xcode-project.md)
 
