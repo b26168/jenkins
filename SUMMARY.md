@@ -4,7 +4,7 @@
 * [安裝 Jenkins](chapter1.md)
   * [安裝 Jenkins 的前置作業](chapter1/jenkins pre-install.md)
   * [開始安裝 Jenkins](chapter1/jenkins install.md)
-  * [開始 Jenkins 設定](chapter1/jenkins install/jenkins init-setup.md)
+  * [開始 Jenkins 設定](chapter1/jenkins init-setup.md)
 * [Git 設定](chapter2.md)
   * [連結 git repository](chapter2/git repository connet.md)
   * [Git plugin setting](chapter2/git-plugin-setting.md)
@@ -12,4 +12,5 @@
   * [新增一個 job](chapter3/new-item.md)
   * [Build Now](chapter3/build-now.md)
   * [Build xcode project](chapter3/build-xcode-project.md)
+* [常用的套件與設定](chapter4.md)
 
