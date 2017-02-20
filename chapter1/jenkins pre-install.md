@@ -26,14 +26,13 @@
 代表你已經有安裝 JAVA 1.8.0_121 的版本 以及 Java SE Development Kit 1.8.0_121-b13 的版本了
 
 
-
 #### 假如沒有的話, 作下面兩個步驟吧!
 
-    1. 安裝 Apple's Java
+1. 安裝 Apple's Java
 
     http://support.apple.com/kb/DL1572
 
-    2. 安裝 Oracle Java 8
+2. 安裝 Oracle Java 8
 
     http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
