@@ -14,4 +14,5 @@
   * [Build xcode project](chapter3/build-xcode-project.md)
 * [常用的套件與設定](chapter4.md)
   * [Log parser plugin](chapter4/log-parser-plugin.md)
+  * [EMail extension plugin](chapter4/email-extension-plugin.md)
 
