@@ -1,9 +1,9 @@
 連結 git repository
 ====
 
-#### 有使用過 github 或 bitbucket 的人, 應該都會有要設定 git 連結的經驗, 需要與本機的電腦作 SSH Key 的連結
+有使用過 github 或 bitbucket 的人, 應該都會有要設定 git 連結的經驗, 需要與本機的電腦作 SSH Key 的連結
 
-#### 現在 Jenkins 就是我們當初使用 github 或 bitbucket 的電腦本機, 先將電腦連接到我們的遠端儲存裝置吧!
+現在 Jenkins 就是我們當初使用 github 或 bitbucket 的電腦本機, 先將電腦連接到我們的遠端儲存裝置吧!
 
 #### 1. 產生 SSH Key
 

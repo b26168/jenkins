@@ -1,13 +1,13 @@
 Build xcode project
 ====
 
-#### 在沒有設定 build 的步驟前, 其實 job 都沒有真正的 build 到 code, 他只是將你的 configuration build 成功而已
+在沒有設定 build 的步驟前, 其實 job 都沒有真正的 build 到 code, 他只是將你的 configuration build 成功而已
 
-#### 而要 build code 的前提下, 我們要提供 builder 給 Jenkins 使用, 今天我們所用的是 Objective-C 的語言, 所以我們要讓 Jenkins 可以去 build 他, 就必須讓他可以使用 xcode, 所以這裡將會講到該如何設定 xcode 給 Jenkins 使用
+而要 build code 的前提下, 我們要提供 builder 給 Jenkins 使用, 今天我們所用的是 Objective-C 的語言, 所以我們要讓 Jenkins 可以去 build 他, 就必須讓他可以使用 xcode, 所以這裡將會講到該如何設定 xcode 給 Jenkins 使用
 
 > 想當然爾, 電腦要先裝好 xcode 拉!
 
-#### 有兩種方式可以 build xcode project, 一個是直接安裝 xcode integration 的 plug-in, 另一個是直接 key shell script 
+有兩種方式可以 build xcode project, 一個是直接安裝 xcode integration 的 plug-in, 另一個是直接 key shell script 
 
 #### 1. 使用 xcode integration
 
@@ -15,29 +15,29 @@ Build xcode project
 
 > 安裝套件的方式跟裝 git plugin 一樣
 
-安裝好以後, 我們到 Configure System 找到 xcode Builder 的設定區域
+安裝好以後, 我們到 ```Configure System``` 找到 ```xcode Builder``` 的設定區域
 
 ![](/assets/xcode setting.PNG)
 
-如上設定好執行檔的位置後, 就 "Save" 離開這一頁吧
+如上設定好執行檔的位置後, 就 ```Save``` 離開這一頁吧
 
-接著進到 job 的 configure 頁面, 會看到我們第一次新增 Job 的畫面
+接著進到 job 的 ```configure``` 頁面, 會看到我們第一次新增 Job 的畫面
 
-到 Build 的區域並選擇 xcode
+到 ```Build``` 的區域並選擇 ```xcode```
 
 ![](/assets/xcode build setting.PNG)
 
-你的頁面就會多出了 Xcode 的區域
+你的頁面就會多出了 ```Xcode``` 的區域
 
 ![](/assets/xcode build setting2.PNG)
 
-設定 Target, 基本上就是 xcode 的專案名稱 -> "Save"
+設定 ```Target```, 基本上就是 xcode 的專案名稱 -> ```Save```
 
 ![](/assets/xcode build setting2.PNG)
 
 其實這樣就都設定好了, 接著 build 看看
 
-結果發生一件事情, console output 顯示
+結果發生一件事情, ```console output``` 顯示
 
 ![](/assets/xcode build.PNG)
 
@@ -55,11 +55,11 @@ Build xcode project
 
 然後你的 command line 也就隨你的需求去下其他更多的指令, 或許對某些喜歡下指令的人來說方便了許多
 
-我們直接就到 job 的 configure 頁面, Build 的區域點選 "Execute shell"
+我們直接就到 job 的 configure 頁面, ```Build``` 的區域點選 ```Execute shell```
 
 ![](/assets/shell.PNG)
 
-接著會出現 Execute shell 的區域
+接著會出現 ```Execute shell``` 的區域
 
 ![](/assets/shell xcode.PNG)
 

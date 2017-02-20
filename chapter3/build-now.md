@@ -1,11 +1,11 @@
 Build now
 ====
 
-#### 完成 job 的 Configure 後, 就能進行 job 的建置了
+完成 job 的 Configure 後, 就能進行 job 的建置了
 
 #### 1. Build
 
-在完成了 Configure 後, 就會看到下面的畫面, 並且按下 Build Now, 就會看到 Build History 有一個建置正在 run 的示意圖
+在完成了 ```Configure``` 後, 就會看到下面的畫面, 並且按下 ```Build Now```, 就會看到 ```Build History``` 有一個建置正在 run 的示意圖
 
 ![](/assets/initbuild.PNG)
 
@@ -19,7 +19,7 @@ Build now
 
 ![](/assets/build page.PNG)
 
-我們可以點選 Console Output 看到剛剛的建置過程
+我們可以點選 ```Console Output``` 看到剛剛的建置過程
 
 ![](/assets/buildlog.PNG)
 

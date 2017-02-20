@@ -1,7 +1,7 @@
 開始 Jenkins 設定
 ====
 
-#### 基本上到這裡會發現 Mac 的 User 多了一個 Jenkins 的使用者, 在所以事情開始之前, 先用 Jenkins 使用者登入你的 Mac 吧!
+基本上到這裡會發現 Mac 的 User 多了一個 Jenkins 的使用者, 在所以事情開始之前, 先用 Jenkins 使用者登入你的 Mac 吧!
 
 1. 設定 Jenkins 使用者的密碼
     
