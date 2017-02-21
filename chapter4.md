@@ -13,3 +13,4 @@
 * ## EMail extension plugin
 * ## Workspace cleanup plugin
 * ## Post build task
+* ## Role strategy plugin

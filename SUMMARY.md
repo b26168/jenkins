@@ -17,3 +17,4 @@
   * [EMail extension plugin](chapter4/email-extension-plugin.md)
   * [Workspace cleanup plugin](chapter4/workspace-cleanup-plugin.md)
   * [Post build task](chapter4/post-build-task.md)
+  * [Role strategy plugin](chapter4/Role-strategy-plugin.md)
