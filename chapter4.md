@@ -11,3 +11,5 @@
 
 * ## Log parser plugin
 * ## EMail extension plugin
+* ## Workspace cleanup plugin
+* ## Post build task

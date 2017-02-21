@@ -16,3 +16,4 @@
   * [Log parser plugin](chapter4/log-parser-plugin.md)
   * [EMail extension plugin](chapter4/email-extension-plugin.md)
   * [Workspace cleanup plugin](chapter4/workspace-cleanup-plugin.md)
+  * [Post build task](chapter4/post-build-task.md)
