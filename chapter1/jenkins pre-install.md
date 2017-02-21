@@ -10,7 +10,9 @@
 
 #####請開啟 Terminal 輸入以下指令
 
-```bash java -version ```
+```bash
+java -version
+```
 
 他可能就會出現以下的訊息
 
