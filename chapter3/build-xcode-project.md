@@ -45,8 +45,11 @@ uild xcode project
 ![](/assets/xcode build.PNG)
 
 > xcrun 這個東西需要權限, 所以必須再將他權限開啟才能給 jenkins 使用
+>
 > 發現 xcrun 的權限是 -rwxr-xr-x, 應該要可以執行才對, 不管先讓他 chmod 777 再說
+>
 > 結果就跳出了 ```chmod: Unable to change file mode on xcrun: Operation not permitted```
+>
 > 所以目前還無解!!!
 
 #### 2. 使用 shell build
