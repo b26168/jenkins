@@ -1,5 +1,4 @@
-B
-uild xcode project
+Build xcode project
 ====
 
 在沒有設定 build 的步驟前, 其實 job 都沒有真正的 build 到 code, 他只是將你的 configuration build 成功而已

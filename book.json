@@ -1,0 +1,16 @@
+{
+    "gitbook": "3.2.2",
+    "author": "pshuang <pshuang.b26168@gmail.com>",
+    "title": "Jenkins",
+    "description": "",
+    "language": "zh-tw",
+    "plugins": [
+        "disqus",
+        "codeblock-filename"
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "b26168"
+        }
+    }
+}
