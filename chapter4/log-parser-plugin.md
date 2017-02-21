@@ -15,7 +15,7 @@ Log parser plugin
 
 首先要寫一個給 Log Parser 能夠看懂得設定檔, 放在本機端, 格式如下
 
-> level regx
+> level regex
 
 例如我這邊使用的, 我只需要 parse error 跟 warning 兩種
 ```bash
