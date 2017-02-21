@@ -1,4 +1,5 @@
-Build xcode project
+B
+uild xcode project
 ====
 
 在沒有設定 build 的步驟前, 其實 job 都沒有真正的 build 到 code, 他只是將你的 configuration build 成功而已
@@ -7,7 +8,9 @@ Build xcode project
 
 > 想當然爾, 電腦要先裝好 xcode 拉!
 
-有兩種方式可以 build xcode project, 一個是直接安裝 xcode integration 的 plug-in, 另一個是直接 key shell script 
+有兩種方式可以 build xcode project, 一個是直接安裝 xcode integration 的 plug-in, 另一個是直接 key shell script
+
+## _不過第一個方式我目前還沒使用成功, 所以可以先跳過!!!_
 
 #### 1. 使用 xcode integration
 
@@ -42,8 +45,9 @@ Build xcode project
 ![](/assets/xcode build.PNG)
 
 > xcrun 這個東西需要權限, 所以必須再將他權限開啟才能給 jenkins 使用
-
-基本上就正常了
+> 發現 xcrun 的權限是 -rwxr-xr-x, 應該要可以執行才對, 不管先讓他 chmod 777 再說
+> 結果就跳出了 ```chmod: Unable to change file mode on xcrun: Operation not permitted```
+> 所以目前還無解!!!
 
 #### 2. 使用 shell build
 
