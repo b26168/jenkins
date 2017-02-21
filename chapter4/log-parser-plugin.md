@@ -61,9 +61,12 @@ _剛剛第二步驟的檔案我取名為 ```LogParseRule```_
 
 ![](/assets/build parse setting.PNG)
 
-> 另外一件很重要的事情, 假設你上一次 build 跟這一次的內容完全一樣, 基本上他 build 不會去 parse 到任何東西
-> 當然內容完全一樣的情況很少見, 但是假設你有這種情況的發生, 其實可以讓 job 在每次 build 的時候就先清空 workspace 就可以正常使用
-> 可以從 ```Build Environment``` -> ```Delete workspace before build starts``` 去勾選即可
+> 另外一件很重要的事情, 會有沒有做 parse 的情況發生
+> 假設你上一次 build 跟這一次的內容完全一樣, 基本上他 build 不會去 parse 到任何東西
+> 因為他並沒有整個清空再 build, 只是簡單的 rebuild 而已
+> 所以他的 console output 就沒有出現 warning 或 error 一些 build 的過程中才會出現的內容
+> 自然就 parse 不到資料了
+> 通常 build 之前我們會先清空上一次的 build, 這個之後就會講到了
 
 #### 5. 看結果
 
