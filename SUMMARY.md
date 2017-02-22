@@ -18,3 +18,4 @@
   * [Workspace cleanup plugin](chapter4/workspace-cleanup-plugin.md)
   * [Post build task](chapter4/post-build-task.md)
   * [Role strategy plugin](chapter4/Role-strategy-plugin.md)
+  * [Archive the artifacts](chapter4/Archive-the-artifacts.md)

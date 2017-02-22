@@ -14,3 +14,4 @@
 * ## Workspace cleanup plugin
 * ## Post build task
 * ## Role strategy plugin
+* ## Archive the artifacts
