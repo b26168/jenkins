@@ -27,7 +27,9 @@ Role strategy plugin
 
 ![](/assets/manage role setting.PNG)
 
-可以看到他能夠針對 Global, Project, Slave 三種層級去分類 Roles
+可以看到他能夠針對 ```Global```, ```Project```, ```Slave``` 三種層級去分類 Roles
+
+> Slave 我們暫時不討論, 也暫時不會用到
 
 假設是 ```Global roles``` 的設定, 他只有開放一個 ```Role to add``` 的功能, 除了預設有 ```admin``` 的 Role, 我們在這裡另外加上了 programmers, project leader, watcher
 

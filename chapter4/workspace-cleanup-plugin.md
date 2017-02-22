@@ -43,7 +43,9 @@ _資料夾砍掉了是要看空氣嗎..._
 
 因為都沒檔案了, 所以點進來就甚麼都沒有了
 
-> 假設你沒有要砍 build, 平常這裡是可以進來直接看到整個 project 的, 包含你的 code, 就是你整個 git repository 的內容拉~
+> 假設你沒有要砍 build, 平常這裡是可以進來直接看到整個 project 的, 包含你的 code, 就是你整個 git repository 的內容拉~ 就像下面的圖一樣
+
+![](/assets/workspace.PNG)
 
 #### But, 九把刀小說最厲害的就是這個 But
 
