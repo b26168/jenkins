@@ -49,6 +49,35 @@ EMail extension plugin
 
 我們可以在這裡先設定好一些預設要寄出去的內容, 就不用在 job 的組態裡面去 key
 
+> 這裡提供我的例子
+
+首先要先將 ```Default Content Type``` 設為 ```HTML (text/html)``` 格式, 否則你的 html 語法寄出去會只有文字檔
+
+![](/assets/content type.PNG)
+
+```bash
+<hr/>
+Git commit: $GIT_COMMIT<br/><br/>
+Git  branch: $GIT_BRANCH<br/><br/>
+Git URL: $GIT_URL<br/><br/>
+Status: $BUILD_STATUS<br/><br/>
+Cause: ${CAUSE}<br/><br/>
+Console output: <a href="${BUILD_URL}console">${BUILD_URL}console</a><br/><br/>
+<hr/>
+${JELLY_SCRIPT,template="html"}<br/>
+<hr/>
+```
+
+> ```$GIT_COMMIT``` 等的環境變數為 Git plugin 提供的, 可以到他的 wiki 去看哪些可以使用, 不過我在使用過程中, 有些變數還是會沒有內容, 目前還不知道原因
+
+> 以上的內容下面會在 show 出來
+
+> 關於 ```${JELLY_SCRIPT,template="html"}``` 表示用 jelly script 去寫的網頁樣示, 不過我還沒研究, 暫時這樣 key 就能直接用他的模版了, 這邊表示將 changeset 的內容都 show 出來
+
+> 實際會是這樣
+
+![](/assets/changeset.PNG)
+
 #### 4. job 中的信件內容設定
 
 雖然剛剛已經有設定內容了, 或者剛剛都用預設的沒有改設定, job 組態頁面裡面還是有提供 user for job 去做信件內容的設定
@@ -63,12 +92,47 @@ EMail extension plugin
 
 ![](/assets/build xmail setting2.PNG)
 
-這樣就可以有所區別了
+![](/assets/xemail trigger.PNG)
+
+我這裡的例子已經加入了 ```Ubstable (Test Failures)```  跟 ``` Failure - Any``` 兩個 trigger
+
+> 在 ```Configure System``` 中 Default 的觸發設定就是 ```Failure - Any``` 這個條件了, 但那邊是給 global 使用, 這裡如果我們要針對 job 再做修改, 就要再加一次 ```Failure - Any``` 的情況了
+
+而這裡有提供了各種的觸發條件, 可以依需求去選擇
+
+![](/assets/add trigger.PNG)
+
+這樣就可以對不同的清況寄的信件有所區別了
 
 配合剛剛 ```Log parser console``` 的功能, 我們就可以將 warning 和 error 的信件分開處理
 
-> 那關於信件的內容以及各欄位的說明, 除了他的套件官方頁面, 也可以到這裡看看中文的說明
-> http://www.cnblogs.com/zz0412/p/jenkins_jj_01.html
+另外他已經有提供了一些收件者給我們去選擇
+
+![](/assets/xemail send to.PNG)
+
+> 關於各個表示, 可以點開問號會有說明
+
+> _這個部分還沒有很多的使用測試, 所以還不確定實際上的信件會寄給誰_
+
+而信件的內容這邊提供了我的例子
+
+```bash
+<h2>$PROJECT_NAME - Build # $BUILD_NUMBER</h2>
+<hr/>
+<h3>Warnings</h3>
+<font color="   #FF9224">${BUILD_LOG_REGEX, regex="warning:", showTruncatedLines=false}</font><br/>
+<br/>
+See <a href="${BUILD_URL}parsed_console">${BUILD_URL}parsed_console</a>
+$DEFAULT_CONTENT
+```
+
+> $BUILD_LOG_REGEX 這個變數提供我們從 Log 中用正則表示式來找出字串, 這樣我們就能直接找出重點寄信給收件人
+
+> 這個變數的使用說明可以參考 http://siddesh-bg.blogspot.tw/2012/04/using-buildlogregex-in-jenkins-email.html
+
+我們可以觀察到信件有兩種變數前綴, 以 ```Recipient List``` 為例子, 會有 ```$DEFAULT_RECIPIENTS``` 與 ```PROJECT_DEFAULT_RECIPIENTS```, 前者表示是由 ```Configure System``` 中所設定的參數, 後者表示是由 job 這邊所設定的參數
+
+> 那關於信件的內容以及各欄位的說明, 除了他的套件官方頁面, 也可以到這裡看看中文的說明 http://www.cnblogs.com/zz0412/p/jenkins_jj_01.html
 
 ### 5. 看結果
 
@@ -77,3 +141,5 @@ EMail extension plugin
 ![](/assets/xmail reslut.PNG)
 
 #### 還能直接看到 error 跟 warning 的內容, 真的是方便了許多!
+
+> 因為我們剛剛有使用 $BUILD_LOG_REGEX
