@@ -15,3 +15,4 @@
 * ## Post build task
 * ## Role strategy plugin
 * ## Archive the artifacts
+* ## Poll SCM
