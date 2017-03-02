@@ -17,7 +17,7 @@ Poll SCM
 
 直接進到 job 的組態設定頁面 ```Build Triggers``` 區域就能看到選項了
 
-![](/assets/scm.png)
+![](/assets/scm.PNG)
 
 這個格式很簡單, 其實就是對應到 ```分 時 日 月 星期```, 那當我們按下他旁邊的問號說明也都很清楚, 這裡直接把他複製過來
 
@@ -68,7 +68,7 @@ Poll SCM
 
 當我們 push 以後, 他會直接 build, 我們可以從這裡看到是由 ```Poll SCM``` 觸發的
 
-![](/assets/scm2.png)
+![](/assets/scm2.PNG)
 
 這樣就完成拉~
 
